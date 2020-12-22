@@ -1,7 +1,12 @@
 import VueRouter from 'vue-router'
-import HelloWorld from '../components/HelloWorld'
+import Home from '../components/home/Home'
 
 export default new VueRouter({
-    path: '/',
-    component: HelloWorld
+    routes: [
+        {
+            path: '/',
+            name: 'Home',
+            component: Home
+        }
+    ]
 })
